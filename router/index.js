@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import ServerView from '../views/ServerView.vue'
+import ServerView from '@/views/ServerView.vue'
+import OptionsView from '@/views/OptionsView.vue'
 
 const routes = [
   {
@@ -10,7 +11,7 @@ const routes = [
   {
     path: '/options',
     name: 'options',
-    component: () => import('@/views/OptionsView.vue')
+    component: OptionsView
   }
 ]
 
